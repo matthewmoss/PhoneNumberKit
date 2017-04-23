@@ -119,7 +119,9 @@ final class ParseManager {
 					} else {
 						multiParseArray.append(nil)
 					}
-                } catch {}
+                } catch {
+					multiParseArray.append(nil)
+				}
                 group.leave()
             })
             if index == numberStrings.count/2 {
